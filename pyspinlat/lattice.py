@@ -2,8 +2,8 @@
 #
 # Copyright (C) 2018 Peter Mann
 # 
-# This file is part of `PySpinLat`, for epidemic network 
-# analytical results using Python.
+# This file is part of `PySpinLat`, for statistical mechanical 
+# spin lattice models using Python.
 #
 # `PySpinLat` is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
