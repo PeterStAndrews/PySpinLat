@@ -19,11 +19,12 @@
 # along with `PySpinLat`. If not, see <http://www.gnu.org/licenses/gpl.html>.
 
 from numpy.random import rand
+from pyspinlat import *
 import numpy as np
 import networkx
 import epyc
 
-class IsingModel( pyspinlat.LatticeProcess ):
+class IsingModel( LatticeProcess ):
     '''Subclasses the `LatticeProcess` to fill in the dynamics of 
     each update according to the Ising model under local Monte Carlo 
     updates. '''
