@@ -1,4 +1,4 @@
-# LatticeProcess base class
+# Lattice base class
 #
 # Copyright (C) 2018 Peter Mann
 # 
@@ -95,7 +95,8 @@ class LatticeProcess( epyc.Experiment ):
         return energy/(len(g.neighbors(n))+1.0)
     
     def returnField( self, g, params ):
-        '''Returns the spin field as a numpy array for post-processing.'''
+        '''Returns the spin field as a numpy array for post-processing
+        or animation creation.'''
         # get spin attributes from network: returns dict as {node_id: spin}
         config = networkx.get_node_attributes(g,self.SPIN)
         N = params[self.N]
@@ -122,7 +123,7 @@ class LatticeProcess( epyc.Experiment ):
         
         # update the dynamics 
         for i in range(num_updates):
-            self.dynamics( g, beta)
+            self.dynamics(g, beta)
             
             # compute expectation quantities 
             lattice_energy = self._lattice_energy(g)
