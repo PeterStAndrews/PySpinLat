@@ -23,7 +23,7 @@ import numpy as np
 import networkx
 import epyc
 
-class IsingModel( LatticeProcess ):
+class IsingModel( pyspinlat.LatticeProcess ):
     '''Subclasses the `LatticeProcess` to fill in the dynamics of 
     each update according to the Ising model under local Monte Carlo 
     updates. '''
