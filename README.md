@@ -5,3 +5,5 @@ A library that creates statistical mechanics models of spin lattice systems usin
 # TO-DO
 
 * create Potts model
+* investigate other update algorithms
+* investigate exchange dynamics 
